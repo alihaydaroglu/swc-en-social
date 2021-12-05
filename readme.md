@@ -14,6 +14,8 @@ Follow the simple steps if you just want to get it working as fast as possible. 
 5. In the terminal, type `conda env create -f env-cpu.yml` and follow instructions to install all of the required packages. Say yes to whatever conda asks.
 6. Activate this environment by typing `conda activate swc-en-social`
 7. Launch a jupyter notebook server by typing `jupyter notebook`
+8. A browser page with the notebook files should open up. If not, go to http://localhost:8888 on your browser. Small chance it asks for a password, if so you can set one up as instructed [here](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#automatic-password-setup)
+9. Open `01_introduction.ipynb` and follow instructions inside.
 
 
 ### Explanation and Troubleshooting
@@ -27,4 +29,4 @@ conda install -c conda-forge notebook
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
-Next, we activate the environment, and launch a `jupyter notebook` server. This is a platform that lets you write and run snippets of python code in browser and see the results immediately, without having to go 
+Next, we activate the environment, and launch a `jupyter notebook` server. This is a platform that lets you write and run snippets of python code in browser and see the results immediately. It's the most common tool I know of for data exploration and analysis in industry and academia, especially for ML-type things. The notebook "server" runs only on your local computer and by default is only accessible locally at port 8888 of localhost. When you type `http://localhost:8888` on your local browser, it connects to the server you started running. 
